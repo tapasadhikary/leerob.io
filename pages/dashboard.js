@@ -8,6 +8,7 @@ import Unsplash from '@/components/metrics/Unsplash';
 import YouTube from '@/components/metrics/Youtube';
 import TopTracks from '@/components/TopTracks';
 import Hashnode from '@/components/metrics/Hashnode';
+import DevTo from '@/components/metrics/DevTo';
 
 export default function Dashboard() {
   return (
@@ -31,6 +32,7 @@ export default function Dashboard() {
           <Hashnode />
           <GitHub />
           <YouTube />
+          <DevTo />
         </div>
         {/*<div className="grid gap-4 grid-cols-1 sm:grid-cols-2 my-2 w-full">
           <Analytics />

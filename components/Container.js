@@ -32,12 +32,12 @@ export default function Container(props) {
         <meta property="og:url" content={`https://leerob.io${router.asPath}`} />
         <link rel="canonical" href={`https://leerob.io${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
-        <meta property="og:site_name" content="Lee Robinson" />
+        <meta property="og:site_name" content="Tapas Adhikary" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@leeerob" />
+        <meta name="twitter:site" content="@tapasadhikary" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
@@ -89,6 +89,9 @@ export default function Container(props) {
           </NextLink>
           <NextLink href="/blog">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Blog</a>
+          </NextLink>
+          <NextLink href="/projects">
+            <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">Side Hustles</a>
           </NextLink>
           <NextLink href="/about">
             <a className="p-1 text-gray-900 sm:p-4 dark:text-gray-100">About</a>
