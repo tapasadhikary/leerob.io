@@ -4,6 +4,8 @@ import GitHub from '@/components/metrics/Github';
 import YouTube from '@/components/metrics/Youtube';
 import Hashnode from '@/components/metrics/Hashnode';
 import DevTo from '@/components/metrics/DevTo';
+import Fcc from '@/components/metrics/Fcc';
+import Npm from '@/components/metrics/Npm';
 
 export default function Dashboard() {
   return (
@@ -27,7 +29,9 @@ export default function Dashboard() {
           <Hashnode />
           <GitHub />
           <YouTube />
+          <Fcc />
           <DevTo />
+          <Npm />
         </div>
       </div>
     </Container>
