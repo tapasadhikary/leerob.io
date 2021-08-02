@@ -1,9 +1,10 @@
+
+import ExternalLink from './ExternalLink';
+
 export default function VideoCard({ id, snippet, statistics }) {
   return (
-    <a
-      className="w-full"
+    <ExternalLink
       href={`https://www.youtube.com/watch?v=${id}`}
-      aria-label={snippet.title}
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -13,6 +14,7 @@ export default function VideoCard({ id, snippet, statistics }) {
             {snippet.title}
           </h4>
           <p className="text-gray-500 text-left md:text-right w-32 mb-4 md:mb-0">
+            {`${new Number(statistics.likeCount).toLocaleString()} Likes`} {' | '}
             {`${new Number(statistics.viewCount).toLocaleString()} views`}
           </p>
         </div>
@@ -20,6 +22,6 @@ export default function VideoCard({ id, snippet, statistics }) {
           {snippet.description.slice(0, 85) + '...'}
         </p>
       </div>
-    </a>
+    </ExternalLink>
   );
 }
